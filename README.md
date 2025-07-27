@@ -18,12 +18,19 @@ python
 Copy
 Edit
 / (root)
- ├── db.php           # Database connection
- ├── login.php        # Login page
- ├── register.php     # Registration page
- ├── chat.php         # Chat room
- ├── all.css          # Stylesheet
+
+ ├── db.php  
+ # Database connection
+ ├── login.php 
+ # Login page
+ ├── register.php 
+ # Registration page
+ ├── chat.php    
+ # Chat room
+ ├── all.css   
+ # Stylesheet
  └── README.md
+ 
 🛠 Database Setup
 Run this SQL to create the database and required tables:
 
