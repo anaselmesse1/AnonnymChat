@@ -14,9 +14,7 @@ It allows users to create accounts, log in securely, and chat anonymously with o
 🎨 Modern Design – Clean, dark-themed interface with cool effects.
 
 📂 Project Structure
-python
-Copy
-Edit
+
 / (root)
 
  ├── db.php  
@@ -34,26 +32,36 @@ Edit
 🛠 Database Setup
 Run this SQL to create the database and required tables:
 
-sql
-Copy
-Edit
 CREATE DATABASE chatapp;
+
 USE chatapp;
 
 CREATE TABLE allusers (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     username VARCHAR(100) UNIQUE NOT NULL,
+    
     password VARCHAR(250) NOT NULL,
+    
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    
 );
 
 CREATE TABLE allmsgs (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     userid INT NOT NULL,
+    
     msgs TEXT NOT NULL,
+     
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
     FOREIGN KEY (userid) REFERENCES allusers(id) ON DELETE CASCADE
+    
 );
+
 ⚡ Installation
 Clone this repository or download it as a ZIP.
 
