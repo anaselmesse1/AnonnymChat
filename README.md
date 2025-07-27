@@ -1,4 +1,4 @@
-🟢 AnonnymChat – Secure & Anonymous Chat App
+# 🟢 AnonnymChat – Secure & Anonymous Chat App
 AnonnymChat is a simple yet powerful anonymous chat application built with PHP and MySQL.
 It allows users to create accounts, log in securely, and chat anonymously with others while keeping data private.
 
